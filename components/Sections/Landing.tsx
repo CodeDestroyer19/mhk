@@ -22,6 +22,7 @@ const LandingPage = () => {
               src={img}
               alt="Munchkin Koneko logo on iphone"
               className="fade-in"
+              loading="lazy"
             />
           </div>
 

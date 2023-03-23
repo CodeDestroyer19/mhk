@@ -14,8 +14,8 @@ const Props = () => {
   });
 
   return (
-    <div className="py-16 min-h-screen absolute inset-0 flex items-center justify-center">
-      <div className="white-glassmorphism shadow rounded-lg p-6">
+    <div className="py-16 min-h-screen absolute inset-0 flex items-center justify-center white-glassmorphism shadow">
+      <div className="rounded-lg p-6">
         <h2 className="text-4xl font-bold mb-4 text-black">
           Munchkin Konenko Token Economics
         </h2>

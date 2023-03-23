@@ -2,24 +2,35 @@ import React from "react";
 import Image from "next/image";
 
 import logo from "../../public/res/headlogo_S.png";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaTelegram, FaDiscord } from "react-icons/fa";
+import { SiEthereum } from "react-icons/si";
+import SocialLink from "../comps/SocialLinks";
+
+const NavBarItem = ({
+  title,
+  classprops,
+}: {
+  title: String;
+  classprops: String;
+}) => <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>;
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4">
-    <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
-      <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        {["Road Map", "Updates", "Tokenomics", "White Paper"].map(
-          (item, index) => (
-            <p
-              className="text-white text-base text-center mx-2 cursor-pointer"
-              key={`Item` + index}
-            >
-              {item}
-            </p>
-          )
-        )}
-      </div>
-      <div className="flex flex-[0.5] justify-center items-center">
-        <Image src={logo} alt="logo" className="w-32" />
+    <div className="w-full container flex sm:flex-row flex-col justify-between items-center my-4">
+      <ul className="text-black  md:flex list-none flex-row justify-between items-center flex-initial">
+        <div className="py-2">
+          <SocialLink
+            href={"https://twitter.com/MunchkinKoneko"}
+            icon={AiFillTwitterCircle}
+          />
+          <SocialLink href={"https://t.me/MunchkinKoneko"} icon={FaTelegram} />
+          <SocialLink href={"https://discord.gg/JVzvXXXhy8"} icon={FaDiscord} />
+          <SocialLink href={"www.twitter.com"} icon={SiEthereum} />
+        </div>
+      </ul>
+      <div className="flex justify-center ml-auto mr-0 items-center">
+        <Image src={logo} alt="logo" className="w-24" loading="lazy" />
       </div>
     </div>
 
@@ -31,8 +42,6 @@ const Footer = () => (
         info@kryptomastery.com
       </p>
     </div>
-
-    <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
 
     <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
       <p className="text-white text-left text-xs">@kryptomastery2022</p>
