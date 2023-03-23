@@ -134,8 +134,8 @@ const Roadmap = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 items-center flex image-container">
-            <img
-              src={Logo.src}
+            <Image
+              src={Logo}
               alt="Roadmap on macbook"
               className="fade-in m-auto"
             />
