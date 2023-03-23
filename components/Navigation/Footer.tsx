@@ -18,7 +18,7 @@ const NavBarItem = ({
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4">
     <div className="w-full container flex sm:flex-row flex-col justify-between items-center my-4">
-      <ul className="text-black  md:flex list-none flex-row justify-between items-center flex-initial">
+      <ul className="text-black md:flex list-none flex-row justify-between items-center flex-initial">
         <div className="py-2">
           <SocialLink
             href={"https://twitter.com/MunchkinKoneko"}
@@ -29,7 +29,7 @@ const Footer = () => (
           <SocialLink href={"www.twitter.com"} icon={SiEthereum} />
         </div>
       </ul>
-      <div className="flex justify-center ml-auto mr-0 items-center">
+      <div className="flex justify-center my-auto md:ml-auto mr-0 items-center">
         <Image src={logo} alt="logo" className="w-24" loading="lazy" />
       </div>
     </div>

@@ -68,7 +68,6 @@ function TokenEconomicsSection() {
             width: "100vw",
           },
         },
-
         {
           speed: -15,
           children: <Props />,
