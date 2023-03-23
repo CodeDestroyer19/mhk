@@ -2,16 +2,14 @@ import React from "react";
 import Image from "next/image";
 
 import Logo from "../../public/res/news.png";
-import Post1 from "../../public/next.svg";
-import Post2 from "../../public/next.svg";
-import Post3 from "../../public/next.svg";
 
 const Blog = () => {
   const posts = [
     {
       id: 1,
       title: "Introducing Munchkin Koneko: The Future of Crypto",
-      image: Post1,
+      image:
+        "https://headline.cdn.prismic.io/headline/62069231-c6a1-455e-9185-2d539a30d352_headline-ogimage.svg",
       date: "March 1, 2023",
       description:
         "Munchkin Koneko is a revolutionary new token that promises to change the way we think about finance. Learn more about this exciting new project and what makes it unique.",
@@ -20,7 +18,8 @@ const Blog = () => {
     {
       id: 2,
       title: "Munchkin Koneko Partners with Major DeFi Platforms",
-      image: Post2,
+      image:
+        "https://headline.cdn.prismic.io/headline/62069231-c6a1-455e-9185-2d539a30d352_headline-ogimage.svg",
       date: "March 10, 2023",
       description:
         "Munchkin Koneko has announced partnerships with some of the biggest names in the DeFi space. Discover what these partnerships mean for the future of Munchkin Koneko and its users.",
@@ -29,7 +28,8 @@ const Blog = () => {
     {
       id: 3,
       title: "Munchkin Koneko Launches on Major Crypto Exchanges",
-      image: Post3,
+      image:
+        "https://headline.cdn.prismic.io/headline/62069231-c6a1-455e-9185-2d539a30d352_headline-ogimage.svg",
       date: "March 17, 2023",
       description:
         "Munchkin Koneko has officially launched on some of the most popular crypto exchanges in the world. Find out where you can buy and trade Munchkin Koneko tokens.",
