@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import Logo from "../../public/logo@0.25x.png";
+import Logo from "../../public/res/news.png";
 import Post1 from "../../public/next.svg";
 import Post2 from "../../public/next.svg";
 import Post3 from "../../public/next.svg";
@@ -38,42 +38,40 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-gray-100">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row md:justify-between items-center">
-          <div className="w-1/2 md:w-auto">
-            <Image src={Logo} alt="Munchkin Koneko logo" />
-          </div>
-          <div className="md:w-1/2 text-gray-800 text-center md:text-right">
-            <h1 className="text-4xl font-bold mb-4">Latest News</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {posts.map(post => (
-                <div
-                  key={post.id}
-                  className="bg-white rounded-lg overflow-hidden shadow-lg"
-                >
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={500}
-                    height={300}
-                  />
-                  <div className="p-4">
-                    <h2 className="text-lg font-semibold mb-2">{post.title}</h2>
-                    <p className="text-sm text-gray-600 mb-4">{post.date}</p>
-                    <p className="text-sm text-gray-700 mb-4">
-                      {post.description}
-                    </p>
-                    <a
-                      href={post.url}
-                      className="bg-purple-700 text-white rounded-full py-2 px-6 font-semibold hover:bg-purple-600 transition-all duration-200"
-                    >
-                      Read More
-                    </a>
-                  </div>
+    <div className="mx-auto px-4 py-8">
+      <div className="flex flex-col md:flex-row md:justify-between items-center">
+        <div className="w-full md:w-1/4">
+          <Image src={Logo} alt="Munchkin Koneko logo" />
+        </div>
+        <div className="md:w-3/4 text-gray-800 text-center md:text-right">
+          <h1 className="text-4xl font-bold mb-4">Latest News</h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {posts.map(post => (
+              <div
+                key={post.id}
+                className="bg-white rounded-lg overflow-hidden shadow-lg"
+              >
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={500}
+                  height={300}
+                />
+                <div className="p-4">
+                  <h2 className="text-lg font-semibold mb-2">{post.title}</h2>
+                  <p className="text-sm text-gray-600 mb-4">{post.date}</p>
+                  <p className="text-sm text-gray-700 mb-4">
+                    {post.description}
+                  </p>
+                  <a
+                    href={post.url}
+                    className="bg-purple-700 text-white rounded-full py-2 px-6 font-semibold hover:bg-purple-600 transition-all duration-200"
+                  >
+                    Read More
+                  </a>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
         className
       )}
     >
-      <IconContext.Provider value={{ size: "1.5em" }}>
+      <IconContext.Provider value={{ size: "2.5em" }}>
         <Icon />
       </IconContext.Provider>
     </a>

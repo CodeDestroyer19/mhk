@@ -13,15 +13,17 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <MetaData />
+      <Navbar />
       <div className="grad">
-        <Navbar />
         <LandingPage />
       </div>
       <ServicesSection />
       <Roadmap />
       <TokenEconomics />
-      <Blog />
-      <Footer />
+      <div className="grad">
+        <Blog />
+        <Footer />
+      </div>
     </ParallaxProvider>
   );
 }
