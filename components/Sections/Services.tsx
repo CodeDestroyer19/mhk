@@ -18,12 +18,6 @@ const Child = () => {
                   We offer top-of-the-line crypto trading services to help you
                   get the most out of your investments.
                 </p>
-                <a
-                  href="#"
-                  className="text-purple-700 font-semibold hover:text-purple-800 transition-all duration-200"
-                >
-                  Learn More
-                </a>
               </div>
             </div>
             <div className="relative p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-1.02">
@@ -34,12 +28,6 @@ const Child = () => {
                   Keep your cryptocurrency secure and easily accessible with our
                   range of crypto wallets.
                 </p>
-                <a
-                  href="#"
-                  className="text-purple-700 font-semibold hover:text-purple-800 transition-all duration-200"
-                >
-                  Learn More
-                </a>
               </div>
             </div>
             <div className="relative p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-1.02">
@@ -50,12 +38,6 @@ const Child = () => {
                   Get involved in cryptocurrency mining and start earning
                   passive income with our cutting-edge mining solutions.
                 </p>
-                <a
-                  href="#"
-                  className="text-purple-700 font-semibold hover:text-purple-800 transition-all duration-200"
-                >
-                  Learn More
-                </a>
               </div>
             </div>
           </div>
@@ -87,7 +69,7 @@ const ServicesSection = () => {
             width: "75px",
             position: "absolute",
             top: 70,
-            left: '80',
+            left: "80",
             right: "10%",
           },
         },
