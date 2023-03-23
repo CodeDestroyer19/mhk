@@ -23,8 +23,8 @@ const Props = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
-          <div className="bg-white p-4 rounded-md shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-1.02">
             <h3 className="text-xl font-bold mb-4">Token Supply</h3>
             <div className="flex justify-between">
               <p>Max Supply:</p>
@@ -40,7 +40,7 @@ const Props = () => {
             </div>
           </div>
 
-          <div className="bg-white p-4 rounded-md shadow-md">
+          <div className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-1.02">
             <h3 className="text-xl font-bold mb-4">Token Circulation</h3>
             <div className="flex justify-between">
               <p>Circulation Rate:</p>
@@ -111,7 +111,7 @@ function TokenEconomicsSection() {
           children: <Props />,
         },
       ]}
-      className="aspect-[2/1]"
+      className="aspect-[2/1] min-h-screen "
     />
   );
 }
