@@ -43,7 +43,7 @@ const Navbar = () => {
         )}
         {toggleMenu && (
           <ul
-            className="z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
+            className="z-10 fixed top-[88px] -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
             flex flex-col justify-start items-start text-white animate-slide-in blue-glassmorphism-ul"
           >
             {["Road Map", "Updates", "Tokenomics", "White Paper"].map(
